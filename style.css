@@ -1,3 +1,21 @@
 body {
     background: blue;
 }
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    background-color: lightblue;
+}
+.sidebar div {
+    padding: 20px;
+    font-size: 24px;
+    display: block;
+}
+
+.content {
+    margin-left: 250px;
+}
