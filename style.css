@@ -1,5 +1,5 @@
 body {
-    background: blue;
+    background: rgb(238, 208, 160);
 }
 .sidebar {
     height: 100%;
@@ -18,4 +18,16 @@ body {
 
 .content {
     margin-left: 250px;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link {
+    font-size: 30px;
 }
