@@ -30,4 +30,13 @@ body {
 
 .link {
     font-size: 30px;
+    padding: 20px;
+}
+
+.content div {
+    display: none;
+}
+
+#games {
+    display: block;
 }
