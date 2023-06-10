@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <title>Tables</title>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <Table>
-    <tbody>
-        <tr>
-            <td id = 'a' class="tab a"></td>
-            <td id = 'b' class="tab b"></td>
-            <td id = 'c' class="tab c"></td>
-        </tr>
-    </tbody>
-    </Table>
+    <a href="index.html"><h2 id="back">Back to games site</h2></a>
+    <h1 id = "heading">Mr. P's Math Puzzle</h1>
+    <div>
+        <Table id="table">
+        <tbody>
+            <tr id="row">
+                <td id = 'a' class="tab a"></td>
+                <td id = 'b' class="tab b"></td>
+                <td id = 'c' class="tab c"></td>
+            </tr>
+        </tbody>
+        </Table>
+    </div>
+    <div id="rules">
+        <p>Your task is to determine the hidden formula.  When you put your cursor over each of the numbers above, a formula
+            of the type 'f(x) = a*x + b' will be applied to that number.  Only positive integers from 1 to 9 are valid for 'a' and 'b.'  
+            Enter your guesses into the fields below.
+        </p>
+    </div>
     <script type="text/javascript" src="tables.js"></script>
 </body>
 </html>
