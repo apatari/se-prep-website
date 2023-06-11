@@ -13,14 +13,27 @@ x = document.getElementById('x');
 y = document.getElementById('y');
 z = document.getElementById('z');
 
+numDisplays = [x, y, z]
+
+
 const a = getRandomInt(9) + 1;
 const b = getRandomInt(9) + 1;
 
-x.innerHTML = nums[0];
+/* x.innerHTML = nums[0];
 y.innerHTML = nums[1];
-z.innerHTML = nums[2];
+z.innerHTML = nums[2]; */
 
-x.addEventListener('mouseover', function() {
+for (let i = 0; i < 3; i++) {
+    numDisplays[i].innerHTML = nums[i];
+    numDisplays[i].addEventListener('mouseover', function() {
+        numDisplays[i].innerHTML = (nums[i] * a) + b;
+    });
+    numDisplays[i].addEventListener('mouseout', function() {
+        numDisplays[i].innerHTML = nums[i];
+    });
+}
+
+/* x.addEventListener('mouseover', function() {
     x.innerHTML = (nums[0] * a) + b;
 })
 
@@ -42,4 +55,4 @@ z.addEventListener('mouseover', function() {
 
 z.addEventListener('mouseout', function() {
     z.innerHTML = nums[2];
-})
+}) */
