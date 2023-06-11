@@ -1,20 +1,45 @@
-const nums = [1, 2, 3];
 
-a = document.getElementById('a');
-b = document.getElementById('b');
-c = document.getElementById('c');
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
-const funPlus = 2;
-const funTimes = 3;
+const nums = [0,0,0];
 
-a.innerHTML = nums[0];
-b.innerHTML = nums[1];
-c.innerHTML = nums[2];
+for (let i = 0; i < 3; i++) {
+    nums[i] = getRandomInt(9) + 1;
+}
 
-a.addEventListener('mouseover', function() {
-    a.innerHTML = (nums[0] * funTimes) + funPlus;
+x = document.getElementById('x');
+y = document.getElementById('y');
+z = document.getElementById('z');
+
+const a = getRandomInt(9) + 1;
+const b = getRandomInt(9) + 1;
+
+x.innerHTML = nums[0];
+y.innerHTML = nums[1];
+z.innerHTML = nums[2];
+
+x.addEventListener('mouseover', function() {
+    x.innerHTML = (nums[0] * a) + b;
 })
 
-a.addEventListener('mouseout', function() {
-    a.innerHTML = nums[0];
+x.addEventListener('mouseout', function() {
+    x.innerHTML = nums[0];
+})
+
+y.addEventListener('mouseover', function() {
+    y.innerHTML = (nums[1] * a) + b;
+})
+
+y.addEventListener('mouseout', function() {
+    y.innerHTML = nums[1];
+})
+
+z.addEventListener('mouseover', function() {
+    z.innerHTML = (nums[2] * a) + b;
+})
+
+z.addEventListener('mouseout', function() {
+    z.innerHTML = nums[2];
 })
