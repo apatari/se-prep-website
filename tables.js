@@ -19,10 +19,6 @@ numDisplays = [x, y, z]
 const a = getRandomInt(9) + 1;
 const b = getRandomInt(9) + 1;
 
-/* x.innerHTML = nums[0];
-y.innerHTML = nums[1];
-z.innerHTML = nums[2]; */
-
 for (let i = 0; i < 3; i++) {
     numDisplays[i].innerHTML = nums[i];
     numDisplays[i].addEventListener('mouseover', function() {
@@ -32,27 +28,3 @@ for (let i = 0; i < 3; i++) {
         numDisplays[i].innerHTML = nums[i];
     });
 }
-
-/* x.addEventListener('mouseover', function() {
-    x.innerHTML = (nums[0] * a) + b;
-})
-
-x.addEventListener('mouseout', function() {
-    x.innerHTML = nums[0];
-})
-
-y.addEventListener('mouseover', function() {
-    y.innerHTML = (nums[1] * a) + b;
-})
-
-y.addEventListener('mouseout', function() {
-    y.innerHTML = nums[1];
-})
-
-z.addEventListener('mouseover', function() {
-    z.innerHTML = (nums[2] * a) + b;
-})
-
-z.addEventListener('mouseout', function() {
-    z.innerHTML = nums[2];
-}) */
